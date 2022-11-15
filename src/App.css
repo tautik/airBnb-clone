@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Popping", sans-serif;
+  font-weight: 400;
+  font-size: 62.5%;
+}
+h2 {
+  font-size: 5rem;
+  font-weight: 400;
+}
+p {
+  font-weight: 200;
+  font-size: 2.4rem;
+}
+.light {
+  font-weight: 200;
+  font-size: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.gray {
+  color: #918e9b;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* navbar */
+nav {
+  /* background-color: antiquewhite; */
+  min-height: 8vh;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px -1px 10px black;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo {
+  width: 100px;
+  height: auto;
+  margin-left: 5rem;
+}
+/* main or hero section */
+main {
+  padding: 1rem 5rem;
   display: flex;
   flex-direction: column;
+  height: 25vh;
+  /* max-height: 92vh;//not working */
+}
+main.img {
+  align-self: center;
+
+  /* align-content: center; */
+}
+.main-content {
+  flex: 3;
+  margin-top: 2rem;
+}
+.main-text {
+  margin-top: 2rem;
+}
+/* .main-content h2 { this NOT working
+  margin-top: 2rem;
+} */
+
+/* Cards */
+.card-section {
+  /* background-color: antiquewhite; */
+  height: 60rem;
+}
+.card {
+  /* background-color: gray; */
+  max-width: 30rem;
+  height: 55rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* align-items: center; */
+  /* justify-content: ; */
+}
+.card-img {
+  width: 100%;
+  height: 100%;
+}
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.badge-display {
+  height: 3rem;
+  position: absolute;
+  background-color: rgb(252, 252, 252);
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  border: none;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  left: 0.6rem;
+  top: 3rem;
+  border-radius: 8%;
 }
